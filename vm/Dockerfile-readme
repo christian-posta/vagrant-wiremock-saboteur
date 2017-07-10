@@ -1,0 +1,21 @@
+docker run -it --expose 8080 --name service --cap-add=NET_ADMIN  --rm centos:7
+
+docker run -it --name service --cap-add=NET_ADMIN  --rm docker.io/resilience
+
+yum install -y java-1.8.0-openjdk.x86_64 lsof wget nc tcpdump iproute initscripts unzip
+rpm -ivh https://github.com/tomakehurst/saboteur/releases/download/v0.7/saboteur-0.7-1.noarch.rpm
+service saboteur-agent start
+
+
+https://github.com/SpectoLabs/hoverfly/releases/download/v0.12.3/hoverfly_v0.12.3_linux_amd64.zip
+
+https://github.com/SpectoLabs/hoverfly/releases/download/v0.12.3/hoverfly_bundle_linux_386.zip
+ceposta@postamac(Downloads) $ unzip hoverfly_bundle_linux_386.zip 
+Archive:  hoverfly_bundle_linux_386.zip
+  inflating: hoverctl                
+  inflating: hoverfly                
+replace LICENSE.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
+  inflating: LICENSE.txt             
+ extracting: VERSION.txt
+
+
