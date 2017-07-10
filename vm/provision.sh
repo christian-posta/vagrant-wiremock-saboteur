@@ -1,4 +1,4 @@
-yum install -y java-1.7.0-openjdk.x86_64 lsof wget nc
+yum install -y java-1.7.0-openjdk.x86_64 lsof wget nc tcpdump
 
 # Set up and run WireMock
 cp /vagrant/wiremock*.jar /home/vagrant/wiremock.jar
